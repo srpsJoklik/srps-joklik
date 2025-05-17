@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spolek rodičů při ZŠ Dr. Joklíka Kyjov</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <header class="flex items-center justify-between p-4 shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" alt="Logo spolku" class="h-12 w-12">
+      <h1 class="text-2xl font-bold">Spolek rodičů při ZŠ Dr. Joklíka Kyjov</h1>
+    </div>
+  </header>
+
+  <nav class="bg-blue-100 py-2 px-4">
+    <ul class="flex space-x-4">
+      <li><button onclick="openTab('o-spolku')" class="tab-button">O spolku</button></li>
+      <li><button onclick="openTab('aktuality')" class="tab-button">Aktuality</button></li>
+      <li><button onclick="openTab('finance')" class="tab-button">Finance</button></li>
+      <li><button onclick="openTab('dokumenty')" class="tab-button">Dokumenty</button></li>
+      <li><button onclick="openTab('zaznamy')" class="tab-button">Zápisy</button></li>
+      <li><button onclick="openTab('clenstvi')" class="tab-button">Členství</button></li>
+      <li><button onclick="openTab('kontakty')" class="tab-button">Kontakty</button></li>
+    </ul>
+  </nav>
+
+  <main class="p-6">
+    <section id="o-spolku" class="tab-content">
+      <h2 class="text-xl font-semibold mb-2">O spolku</h2>
+      <p>Spolek rodičů při ZŠ Dr. Joklíka Kyjov je dobrovolné sdružení rodičů a zákonných zástupců žáků školy, které se podílí na výchově a podpoře dětí ve spolupráci se školou. Cílem je podpora vzdělávání, organizace akcí a komunikace mezi školou a rodinou.</p>
+    </section>
+
+    <section id="aktuality" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-2">Aktuality</h2>
+      <ul class="list-disc pl-6">
+        <li>16. 12. 2024 – Aktualizace webových stránek</li>
+        <li>12. 12. 2024 – Vánoční jarmark s výnosem 8 642 Kč</li>
+        <li>26. 11. 2024 – Schválení nových stanov spolku</li>
+        <li>24. 10. 2024 – Volba nového předsedy spolku</li>
+      </ul>
+    </section>
+
+    <section id="finance" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-2">Finance</h2>
+      <p>Spolek každoročně zveřejňuje přehled o hospodaření, včetně příjmů a výdajů. Finanční prostředky jsou využívány na aktivity a potřeby žáků školy.</p>
+    </section>
+
+    <section id="dokumenty" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-2">Dokumenty</h2>
+      <ul class="list-disc pl-6">
+        <li>Stanovy spolku (platné od 26. 11. 2024)</li>
+        <li>Jednací řád výboru</li>
+        <li>Žádosti o členství</li>
+        <li>Souhlasy školy a označení sídla spolku</li>
+      </ul>
+    </section>
+
+    <section id="zaznamy" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-2">Zápisy z jednání</h2>
+      <ul class="list-disc pl-6">
+        <li>Zápis z 24. 10. 2024</li>
+        <li>Zápis z 26. 11. 2024</li>
+      </ul>
+    </section>
+
+    <section id="clenstvi" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-2">Členství</h2>
+      <p>Členem může být každý rodič žáka školy, který uhradí členský příspěvek. Výše příspěvku pro školní rok 2024/2025 činí 300 Kč za první i druhé dítě.</p>
+    </section>
+
+    <section id="kontakty" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-2">Kontakty</h2>
+      <p><strong>Sídlo:</strong> ZŠ a MŠ Dr. Joklíka, Sídliště U Vodojemu 1261/18, 697 01 Kyjov</p>
+      <p><strong>E-mail:</strong> srps.joklik@gmail.com</p>
+      <p><strong>Datová schránka:</strong> yv58qdz</p>
+      <p><strong>Předseda:</strong> Mgr. David Kos</p>
+    </section>
+  </main>
+
+  <footer class="bg-gray-100 text-center py-4">
+    <p>&copy; Spolek rodičů při ZŠ Dr. Joklíka Kyjov, 2025</p>
+  </footer>
+
+  <script>
+    function openTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(section => section.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
